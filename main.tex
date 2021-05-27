@@ -1,0 +1,229 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.3, 30 April 2017) written by
+% LianTze Lim (liantze@gmail.com), based on the 
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options. 
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper]{altacv}
+
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage{hyperref}
+
+\usepackage{eurosym}
+\usepackage{amstext} % for \text
+\DeclareRobustCommand{\officialeuro}{%
+  \ifmmode\expandafter\text\fi
+  {\fontencoding{U}\fontfamily{eurosym}\selectfont e}}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{100000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Wandile Dhlamini}
+\tagline{Information Systems Programmer, Gender Studies Scholar \& Multimedia Producer}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+\photo{2.5cm}{Um_pic.jpg}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{wl.dlamini@gmail.com}
+%   \phone{000-00-0000}
+  \mailaddress{Cape Town/Johannesburg}
+  
+  \location{\hspace{0.05cm}  South Africa} \hspace{0.3cm} 
+  \phone{+27 (0)79 495 2827} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Professional Experience}
+
+
+\cvevent{Maths Coach}{Numeric}{Feb 2017 -- Jul 2019}{Cape Town, South Africa}
+\begin{itemize}
+\item Tutoring a class of 25 grade 7 learners in Mitchell's Plain for two lessons a week (3 hours)
+\item Responsibilities included:
+  \begin{itemize}
+    \item lesson planning;
+    \item classroom management and discipline;
+    \item logistics manager at Math Camp 2018, a holiday programme for Numeric
+  \end{itemize}
+
+\end{itemize}
+
+\divider
+
+
+\cvevent{Guest Lecturer}{School for International Training (SIT) }{Oct 2017 -- Oct 2019}{Rondebosch, Cape Town}
+\begin{itemize}
+\item Guest lecture presentations centred on intersectional gender theory analysis.
+\item Lecture title: From the binary to the trinary \\
+presented on 27 October 2017 and 23 July 2018
+\item Lecture title: Transness as cis-sanctioned pretense\\
+presented on 25 March 2019, 27 June 2019 and 21 October 2019.  
+
+\end{itemize}
+
+\divider
+
+
+
+\cvevent{Systems Analysis Tutor}{Department of Information Systems, University of Cape Town}{Feb 2020 - June 2020}{Rondebosch, Cape Town}
+\begin{itemize}
+\item online monitoring of student tutorial forum including advising students and explaining concepts
+\item graded and provided constructive feedback for all assignments
+\end{itemize}
+
+\divider
+
+\cvevent{Microsoft AppFactory Intern}{OptiSolutions}{Oct 2020 - July 2021}{Cape Town, South Africa}
+\begin{itemize}
+\item Internship comprised of:
+\begin{itemize}
+    \item individual coding exercises;
+    \item Microsoft certification course (\href{https://docs.microsoft.com/en-us/learn/certifications/data-analyst-associate/}{\underline{Data Analyst Associate}});
+    \item collaboratively building a leave management in-house system in Power Apps
+\end{itemize} 
+\end{itemize}
+
+\divider
+
+\clearpage
+
+% \divider
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+\cvsection[page2sidebar]{Other Experience}
+
+\cvevent{Graphic Designer}{Freelancer}{2017 - current }{Cape Town, South Africa}
+\begin{itemize}
+\item Redesign of logo for Gender DynamiX, 2017
+\item Infographics designer for Free Education Planning Group, University of Cape Town, 2017
+\item Demographics of law infographic for Altum Sonatur, University of Cape Town Faculty of Law magazine
+\item Merchandise designs for Grades and Levels SA, 2017
+\item Event poster, Queer Feminist Film Festival, 2018
+\item EP and singles cover for Ayesha Sharma, Diasphoria: A Narrative Archive for and by Trans People of Color, 2018
+\item \#MyTextbooksCost campaign stickers, Centre for Innovation in Learning and Teaching, University of Cape Town, 2019
+\item Logo for African LGBTQI+ Migration Research Network (ALMN), 2019
+\item Less Lethal Weapons infographics, Anti-Repression work group for C19 People's Coalition, 2020
+\item Logo for Rent Strike South Africa, 2020
+\end{itemize}
+
+\divider
+
+\cvevent{Consultant}{Freelancer}{2016-2017}{Cape Town, South Africa}
+\begin{itemize}
+\item LGBTQIA+ Sensitivity training for employees at Enhancing Care Foundation, 2016
+\item Review of transgender competency programme for Anova Health4Trans, 2017
+\end{itemize}
+
+\divider
+
+\cvsection {Multimedia Portfolio}
+
+\begin{itemize}
+\item \textbf{Writing:}\\ 
+\href{https://africaisnowmag.com/afropunk-2019/}{\underline{Afropunk 2019 in AfricaIsNow Magazine}}
+
+\href{https://thequeercalendar.wordpress.com/2018/03/07/inxeba-returns-to-cinemas-this-friday/}{\underline{Hard News: Inxeba returns to cinemas this Friday}}
+
+\href{https://thequeercalendar.wordpress.com/2018/03/03/8-steps-to-picking-a-banging-song-for-stripperoke/}{\underline{Listicle: 8 steps to picking a banging song for Stripperoke }}
+
+
+\href{https://thequeercalendar.wordpress.com/2018/08/13/rethinking-pronoun-declarations/}{\underline{Analysis: Rethinking pronoun declarations}}
+
+
+\item \textbf{Video:} \\
+
+\href{https://vimeo.com/386945095}{\underline{Connections: mental illness and social relationships}}\\
+
+\href{https://vimeo.com/337621644}{\underline{Secure Our Borders: the rise of anti-immigrant electioneering rhetoric}}
+
+\item \textbf{Podcast: The Fame Monster} \\
+\href{https://soundcloud.com/carbonatedart/the-fame-monster-episode-1}{\underline{Episode 1: the crazy genius/tortured artist trope }}\\ 
+\href{https://soundcloud.com/carbonatedart/the-fame-monster-episode-2}{\underline{Episode 2: ever-changing ableism }}\\ 
+\href{https://soundcloud.com/carbonatedart/the-fame-monster-episode-3}{\underline{Episode 3: positive or accurate representations?}}\\ 
+
+\item \textbf{Photography essays:}\\ 
+\href{https://www.behance.net/gallery/81061435/in-isolation-but-in-constant-communication}{\underline{in isolation but in constant communication}}\\
+\href{https://www.behance.net/gallery/91203941/Afropunk-Joburg-2019}{\underline{Afropunk Joburg 2019}}
+
+\end{itemize}
+\quad
+
+
+
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the 
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+% \addnextpagesidebar[-1ex]{page3sidebar}
+
+
+\end{document}
